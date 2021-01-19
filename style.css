@@ -1,0 +1,46 @@
+#grid {
+  display: grid;
+  grid-template-columns:150px 1fr;
+}
+body {
+  margin:0;
+}
+h1 {
+  border-bottom:1px solid gray;
+  padding:10px;
+  margin:0;
+  display:block; /*생략되어있음*/
+  font-size:45px;
+  text-align:center;
+}
+#grid ol {
+  border-right:1px solid gray;
+  width:80px;
+  margin:0;
+  padding-left:35px;
+  padding-right:7px;
+  padding-top:15px;
+}
+@media(max-width:300px){
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-right:none;
+    border-bottom:1px solid gray;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:15px;
+  }
+  h1 {
+    font-size:30px;
+  }
+}
+a {
+  text-decoration:none;
+}
+a:hover {
+  color:red;
+  text-decoration:underline;
+}
